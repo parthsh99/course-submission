@@ -21,11 +21,11 @@
 
 /*Functions declaration with description*/
 
-void display(unsigned char array[], unsigned int length);
+void print_statistics(unsigned char array[], unsigned int length);
 /**
- * @brief function to print all the output arrays
+ * @brief function to print all the output arrays and values
  *
- * print all output arrays as required in assignment statements
+ * print all output arrays as required in assignment statements like sorted array,minimum,maximum,mean,median of the data
  *
  * @param array - Set of characters containing random natural numbers
  * @param length - length of the array 
@@ -34,7 +34,7 @@ void display(unsigned char array[], unsigned int length);
  * @return no return values 
  */
 
-void disp_data(unsigned char array[], unsigned int length);
+void print_array(unsigned char array[], unsigned int length);
 /**
  * @brief function to print display array
  *
@@ -47,48 +47,7 @@ void disp_data(unsigned char array[], unsigned int length);
  * @return no return values 
  */
 
-
-unsigned char median(unsigned char array[], unsigned int length);
-/** 
- * @brief Given an array of data and a length, returns the median value
- *
- * @param array An array of unsigned chars
- * @param length The length of the array
- *
- * @return The median of the given data in array
- */
-
-unsigned char min(unsigned char array[], unsigned int length);
-/** 
- * @brief Given an array of data and a length, returns the minimum value
- *
- * @param array An array of unsigned chars
- * @param length The length of the array
- *
- * @return The minimum of the array
- */
-
-unsigned char max(unsigned char array[], unsigned int length);
-/** 
- * @brief Given an array of data and a length, returns the max value
- *
- * @param array An array of unsigned chars
- * @param length The length of the array
- *
- * @return The max of the array
- */
-
-unsigned char mean(unsigned char array[], unsigned int length);
-/** 
- * @brief Given an array of data and a length, returns the mean value
- *
- * @param array An array of unsigned chars
- * @param length The length of the array
- *
- * @return median The mean of the array
- */
-
-void sort_data(unsigned char array[], unsigned int length);
+void sort_array(unsigned char array[], unsigned int length);
 /** 
  * @brief Sorts the data using selection sort
  *
@@ -98,5 +57,47 @@ void sort_data(unsigned char array[], unsigned int length);
  *
  *@return no return value
  */
+
+unsigned char find_median(unsigned char array[], unsigned int length);
+/** 
+ * @brief Given an array of data and a length, returns the median value
+ *
+ * @param array An array of unsigned chars
+ * @param length The length of the array
+ *
+ * @return The median of the given data in array
+ */
+
+unsigned char find_min(unsigned char array[], unsigned int length);
+/** 
+ * @brief Given an array of data and a length, returns the minimum value
+ *
+ * @param array An array of unsigned chars
+ * @param length The length of the array
+ *
+ * @return The minimum of the array
+ */
+
+unsigned char find_max(unsigned char array[], unsigned int length);
+/** 
+ * @brief Given an array of data and a length, returns the max value
+ *
+ * @param array An array of unsigned chars
+ * @param length The length of the array
+ *
+ * @return The max of the array
+ */
+
+unsigned char find_mean(unsigned char array[], unsigned int length);
+/** 
+ * @brief Given an array of data and a length, returns the mean value
+ *
+ * @param array An array of unsigned chars
+ * @param length The length of the array
+ *
+ * @return median The mean of the array
+ */
+
+
 
 #endif /* __STATS_H__ */
